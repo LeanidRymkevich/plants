@@ -1,0 +1,269 @@
+#service {
+  background-color: rgba(237, 242, 236, 1);
+}
+
+.service__column {
+  padding: 39px 0 66px 0;
+}
+
+@media (max-width: 768px) {
+  .service__column {
+    padding: 60px 0 33px 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .service__column {
+    padding: 31px 0 28px 0;
+  }
+}
+
+.service__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-right: calc(324px - 109px);
+}
+
+@media (max-width: 768px) {
+  .service__header{
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+  }
+}
+
+@media (max-width: 591px) {
+  .service__header {
+    align-items: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .service__header {
+    align-items: flex-start;
+    padding-right: 78px;
+  }
+}
+
+.service__title {
+  font-family: 'Inika';
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499A18;
+  width: 306px;
+  margin:0;
+}
+
+@media (max-width: 768px) {
+  .service__title {
+    font-size: 35px;
+    line-height: 46px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 380px) {
+  .service__title {
+    width: 187px;
+    font-size: 25px;
+    line-height: 33px;
+  }
+}
+
+.service__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 559px;
+  margin-left: 0;
+  margin-top: 29px;
+}
+
+@media (max-width: 768px) {
+  .service__buttons {
+    width: 83.68%;
+    margin-top: 42px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 631px) {
+  .service__buttons {
+    width: 342px;
+  }
+}
+
+@media (max-width: 380px) {
+  .service__buttons {
+    width: 262px;
+    margin-top: 38px;
+  }
+}
+
+.service__buttons button{
+  font-family: Inika;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: rgba(224, 103, 51, 1);
+
+  width: 161px;
+  height: 50px;
+  border: 1px solid rgba(224, 103, 51, 1);
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: color 1s ease-in-out, background-color 1s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.button.service__button_selected {
+  background-color: #E06733;
+  color: #ffffff;
+}
+
+.service__buttons button:last-child{
+  margin-right: 0;
+}
+
+@media (max-width: 631px) {
+  .service__buttons button:last-child{
+    margin-top: 9px;
+  }
+}
+
+@media (max-width: 380px) {
+  .service__buttons button{
+    font-size: 15px;
+    line-height: 20px;
+    width: 121px;
+    height: 35px;
+  }
+}
+
+.sevice__pictures {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin: 80px 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .sevice__pictures {
+    margin: 40px 0 0 0;
+  }
+}
+
+@media (max-width: 592px) {
+  .sevice__pictures {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 380px) {
+  .sevice__pictures {
+    margin-left: -1px;
+  }
+}
+
+.sevice__pictures > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 330px;
+  transition: all 1s ease-in-out;
+
+  margin-bottom: 55px;
+}
+
+.sevice__pictures > div.service__picture_blur{
+  filter: blur(2px);
+}
+
+@media (max-width: 768px) {
+  .sevice__pictures > div {
+    width: 280px;
+    margin-bottom: 38px;
+  }
+}
+
+@media (max-width: 380px) {
+  .sevice__pictures > div {
+    margin-bottom: 34.5px;
+  }
+
+  .sevice__pictures div:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.service__picture-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0 7px 0 7px;
+
+  border: 1px solid #E3E1D5;
+  border-radius: 0 0 20px 20px;
+}
+
+.sevice__pictures img {
+  display: block;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.sevice__pictures h4 {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: rgba(224, 103, 51, 1);
+  text-align: center;
+
+  padding: 0px;
+  margin: 9px 0 15px 0;
+}
+
+@media (max-width: 768px) {
+  .sevice__pictures h4{
+    margin: 9px 0 12px 0;
+  }
+}
+
+
+
+.sevice__pictures p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: rgba(113, 113, 113, 1);
+  text-align: center;
+
+  padding: 0px;
+  margin: 0 0 35px 0;
+}
+
+@media (max-width: 768px) {
+  .sevice__pictures p {
+    margin: 0 0 17px 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .sevice__pictures p {
+    margin: 0 0 17px 0;
+  }
+}

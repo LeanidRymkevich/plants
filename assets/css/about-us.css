@@ -1,0 +1,127 @@
+#about-us {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 93px 0 95px 0;
+}
+
+@media (max-width: 768px) {
+  #about-us {
+    padding: 40px 0 95px 0;
+  }
+}
+
+@media (max-width: 380px) {
+  #about-us {
+    padding: 30px 0 26px 0;
+  }
+}
+
+.about-us__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .about-us__row {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.about-us__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 0 0 49.51%;
+  margin-top: 68px;
+}
+
+@media (max-width: 768px) {
+  .about-us__body {
+    align-items: center;
+    flex: 0 0 100%;
+    margin-top: 0;
+    margin-bottom: 68px;
+  }
+}
+
+@media (max-width: 380px) {
+  .about-us__body {
+    margin-bottom: -1px;
+  }
+}
+
+.about-us__title {
+  font-family: 'Inika';
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: rgba(73, 154, 24, 1);
+  margin: 0 0 39px 0;
+}
+
+@media (max-width: 768px) {
+  .about-us__title {
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 46px;
+    text-align: center;
+    margin: 0 0 51px 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .about-us__title {
+    font-size: 25px;
+    line-height: 33px;
+    margin: 0 0 13px 0;
+  }
+}
+
+.about-us__title span {
+  color: rgba(224, 103, 51, 1);
+}
+
+.about-us__content {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgba(99, 96, 96, 1);
+  
+  margin: 0px;
+}
+
+@media (max-width: 768px) {
+  .about-us__content {
+    text-align: left;
+  }
+}
+
+@media (max-width: 380px) {
+  .about-us__content {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us__img {
+    margin-top: -1px;
+    max-width: 37.43%;
+  }
+}
+
+@media (max-width: 380px) {
+  .about-us__img {
+    margin-top: 1px;
+    max-width: 45.45%;
+  }
+}
+
+.about-us__img img{
+  display: block;
+  width: 100%;
+}
